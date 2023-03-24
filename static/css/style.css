@@ -1,0 +1,65 @@
+/* sample spreadshet - you should replace all of this! */
+body {
+    margin: 100px;
+}
+
+header {
+    width: 100%;
+    background-color: coral;
+}
+
+#heading {
+    background-color: gainsboro;
+}
+
+#whatis {
+    width: 300px;
+    background-color: forestgreen;
+    border: 10px solid orchid;
+}
+
+.user-card {
+    display: flex;
+    align-items: center; 
+}
+
+.user-avatar {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0 2px 1px #a0a0a0;
+}
+
+#loading {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+#loading:after {
+    content: " ";
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: loading 1.2s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    background-color: yellow;
+}
